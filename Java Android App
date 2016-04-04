@@ -1,0 +1,44 @@
+package com.example.android.happybirthday_;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    
+    public void one(View view){
+        String p="The day when the most beautiful soul was born :')";
+        displayMessage(p);
+    }
+    public void two(View view){
+        String p="Your hand cooked food ^_^";
+        displayMessage(p);
+    }public void three(View view){
+        String p="Janam Janam :)";
+        displayMessage(p);
+    }public void four(View view){
+        String p="Sleeping in your lap :z";
+        displayMessage(p);
+    }public void five(View view){
+        String p="I Love you :*";
+        displayMessage(p);
+    }public void six(View view){
+        String p="Kind, Loving, Know-it-All, Beautiful";
+        displayMessage(p);
+    }public void seven(View view){
+        String p="Please Smile :D";
+        displayMessage(p);
+    }
+
+    private void displayMessage(String message){
+        TextView textView8=(TextView) findViewById(R.id.textView8);
+       textView8.setText(message);
+    }
+}
